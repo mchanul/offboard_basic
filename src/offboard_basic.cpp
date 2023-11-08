@@ -201,7 +201,7 @@ int main(int argc, char** argv)
 
     switch(userInput) {
         case 1: {
-            // 기존 코드를 여기에 삽입합니다...
+            
                 double origin_x=0, origin_y=0;
 
                 /**/std::cout << "Origin locatioin input (base position is new terminel input cmd (rostopic echo /mavros/local_position/pose)), (x , y):" ;
@@ -410,7 +410,6 @@ int main(int argc, char** argv)
         }
         case 2:{
             
-            // 기존 코드를 여기에 삽입합니다...
 
                 double x1, y1;
                 std::cout << "current location (x,y): ";
