@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <node pkg="offboard_basic" type="offboard_basic" name="offboard_basic_node" output="screen"/>
+</launch>
+
