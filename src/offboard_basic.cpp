@@ -312,7 +312,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = v_x; // avoid
                             velocity_msg.linear.y = v_y;
-                            velocity_msg.linear.z = 0.0;
+                            velocity_msg.linear.z = 0.1;
                             
                             velocity_pub.publish(velocity_msg);
                         }
@@ -324,7 +324,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = rv_x; // avoid
                             velocity_msg.linear.y = rv_y;
-                            velocity_msg.linear.z = 0.0;
+                            velocity_msg.linear.z = 0.1;
                             
                             velocity_pub.publish(velocity_msg);
                         }
@@ -337,7 +337,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = cv_x;
                             velocity_msg.linear.y= cv_y;
-                            velocity_msg.linear.z= 0.0;
+                            velocity_msg.linear.z= 0.1;
 
                             velocity_pub.publish(velocity_msg);
                         }
@@ -508,7 +508,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = v_x; // avoid
                             velocity_msg.linear.y = v_y;
-                            velocity_msg.linear.z = 0.0;
+                            velocity_msg.linear.z = 0.1;
                             
                             velocity_pub.publish(velocity_msg);
                         }
@@ -520,7 +520,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = rv_x; // avoid
                             velocity_msg.linear.y = rv_y;
-                            velocity_msg.linear.z = 0.0;
+                            velocity_msg.linear.z = 0.1;
                             
                             velocity_pub.publish(velocity_msg);
                         }
@@ -533,7 +533,7 @@ int main(int argc, char** argv)
 
                             velocity_msg.linear.x = cv_x;
                             velocity_msg.linear.y= cv_y;
-                            velocity_msg.linear.z= 0.0;
+                            velocity_msg.linear.z= 0.1;
 
                             velocity_pub.publish(velocity_msg);
                         }
