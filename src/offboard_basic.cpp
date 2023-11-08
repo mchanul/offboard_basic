@@ -51,7 +51,7 @@ void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& lidar_msg)
         }
     }
 
-    if (min_left_distance < 1.6)
+    if (min_left_distance < 2.0)
     {
         std::cout << "Left Lidar detects obstacle." << std::endl;
         lidar_left = true; // 왼쪽 라이다 감지 여부 업데이트
@@ -79,7 +79,7 @@ void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& lidar_msg)
         }
     }
 
-    if (min_right_distance < 1.6)
+    if (min_right_distance < 2.0)
     {
         std::cout << "Right Lidar detects obstacle." << std::endl;
         lidar_right = true; // 오른쪽 라이다 감지 여부 업데이트
@@ -159,7 +159,7 @@ void lidarCallback(const sensor_msgs::LaserScan::ConstPtr& lidar_msg)
         }
     }    
 
-    if (min_center_distance < 1.8)
+    if (min_center_distance < 2.0)
     {
         std::cout << "Center Lidar detects obstacle." << std::endl;
         lidar_center = true; // 중앙 라이다 감지 여부 업데이트
@@ -495,8 +495,8 @@ int main(int argc, char** argv)
                         }
                     }
 
-                    // 현재의 z 높이를 체크하여 1.3m 이상인 경우에만 조건을 검사합니다.
-                    bool is_above_one_meter = current_pose.pose.position.z >= 1.3;
+                    // 현재의 z 높이를 체크하여 1.2m 이상인 경우에만 조건을 검사합니다.
+                    bool is_above_one_meter = current_pose.pose.position.z >= 1.2;
 
                     if (conditionMetOnce)
                     {
